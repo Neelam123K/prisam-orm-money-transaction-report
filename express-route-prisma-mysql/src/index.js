@@ -3,7 +3,10 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:5173", 
+    origin: [
+    "http://localhost:5173",
+    "https://prisam-orm-money-transaction-report-5mx0.onrender.com"
+  ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
