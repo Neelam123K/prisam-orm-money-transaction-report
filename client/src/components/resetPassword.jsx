@@ -26,7 +26,7 @@ const resetPassword = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://prisam-orm-money-transaction-report.onrender.com/reset-password",
+        "https://prisam-orm-money-transaction-report.onrender.com/api/user/reset-password",
         { token, newPassword }
       );
 

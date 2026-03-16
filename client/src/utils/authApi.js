@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:3000/api/user";
+// const BASE_URL = "http://localhost:3000/api/user";
+const BASE_URL = "https://prisam-orm-money-transaction-report.onrender.com/api/user";
 
 export async function forgotPasswordApi(email) {
   const res = await fetch(`${BASE_URL}/forgot-password`, {
